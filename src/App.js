@@ -9,7 +9,8 @@ import './CSS/content.css'
 const App = () => {
     return(
         <>
-            <Header className="header" />
+            <div className='title'>ImOcean</div>
+            <Header />
             <Content />
             <Footer className="footer" />
         </>
