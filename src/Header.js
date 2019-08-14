@@ -1,7 +1,7 @@
 import React from 'react'
 
 const headerStyle = {
-  backgroundColor: 'blue',
+  backgroundColor: 'skyBlue',
   height: '10vh',
   width: '100vw'
 };
