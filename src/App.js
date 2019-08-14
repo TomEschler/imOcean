@@ -9,9 +9,9 @@ import './CSS/content.css'
 const App = () => {
     return(
         <>
-            <Header />
+            <Header className="header" />
             <Content />
-            <Footer />
+            <Footer className="footer" />
         </>
     )
 }
