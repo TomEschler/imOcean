@@ -10,7 +10,7 @@ const Header = () => {
     return(
         <>
           <div>
-            boooski
+
           </div>
         </>
     )
