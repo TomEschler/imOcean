@@ -1,13 +1,17 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Home from './Home'
+import Header from './Header'
+import Content from './Content'
+import Footer from './Footer'
+import './CSS/content.css'
+
 
 
 const App = () => {
     return(
         <>
-            <Navbar />
-            <Home />
+            <Header />
+            <Content />
+            <Footer />
         </>
     )
 }
