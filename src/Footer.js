@@ -11,7 +11,7 @@ const Footer = () => {
     return(
         <>
         <div style={footerStyle}>
-
+            FOOTER
         </div>
         </>
     )
