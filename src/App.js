@@ -9,6 +9,7 @@ import './CSS/content.css'
 const App = () => {
     return(
         <>
+            <div className='title'>ImOcean</div>
             <Header />
             <Content />
             <Footer />
