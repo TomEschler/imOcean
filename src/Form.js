@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const About = () => {
+const Form = () => {
   const [fName, setFname] = useState("")
   const [lName, setLname] = useState("")
   const [email, setEmail] = useState("")
@@ -9,11 +9,12 @@ const About = () => {
   const handleSubmit = e => {
     e.preventDefault()
     alert(`submitting Name ${fName} ${lName} with email ${email} and an additional comment of "${note}"`)
+    //values need to be routed to the appropriate results
   }
 
   return(
     <>
-      <form onSubmit={handleSubmit}>
+      <form method="POST" action="https://formspree.io/marvin.r02@gmail.com">
         <input 
         type="text" 
         name="fName" 
@@ -48,4 +49,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Form

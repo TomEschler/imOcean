@@ -14,6 +14,7 @@ const App = () => {
             <Menu />
             <Content />
             <Footer />
+            <About />
         </>
     )
 }
