@@ -1,0 +1,18 @@
+
+.menu{
+    background-color: white;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger{
+    margin-right: 10px;
+}
+.bar1, .bar2{
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(to right, #087d93 0%, #e04602 91%);
+    margin: 4px 0;
+}
