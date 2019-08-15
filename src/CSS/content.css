@@ -5,13 +5,16 @@
 
 /* grid-column: 1 / span 3 instead of counting the lines. */
 .title{
-    height: 7vh;
-    background-color: aquamarine;
+    height: 10vh;
+    background-image: url('../images/title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container{
     min-height: 90vh;
-    background-color: grey;
+    background-color: whitesmoke;
     display: grid;
+    grid-gap: 3px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 20vh);
     grid-auto-rows: 10vh;
@@ -23,23 +26,40 @@
             'i1 i1 i2 i2'
             'a a a a'
             'a a a a'
+            'c c c c'
 }
 
 .slide-show{
-    background-color: brown;
+    background-image: url(https://cdn.shopify.com/s/files/1/1464/6238/articles/plastic_in_oceans_1400x.progressive.jpg?v=1533035672);
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: s;
     text-align: center;
-    
+    border: 4px solid transparent;
+    /* border-top-color: skyblue; */
+    border-radius: 8px;
 }
 .item-1{
-    background-color: indianred;
+    
     grid-area: i1;
+    border: 4px solid #e04602;
+    border-radius: 8px;
 }
 .item-2{
-    background-color: cornflowerblue;
+    
     grid-area: i2;
+    border: 4px solid #e04602;
+    border-radius: 8px;
 }
 .articles{
-    background-color: coral;
+    
     grid-area: a;
+    border: 4px solid #087d93;
+    border-radius: 8px;
+}
+.contact{
+    background-color: whitesmoke;
+    grid-area: c;
+    border: 4px solid #e04602;
+    border-radius: 8px;
 }
