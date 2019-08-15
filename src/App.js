@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Menu from './Menu'
 import Content from './Content'
 import Footer from './Footer'
 import './CSS/content.css'
@@ -9,10 +9,11 @@ import './CSS/content.css'
 const App = () => {
     return(
         <>
-            <div className='title'>ImOcean</div>
-            <Header />
+            <div className='title'></div>
+            <Menu />
             <Content />
             <Footer />
+            
         </>
     )
 }
