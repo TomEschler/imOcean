@@ -8,7 +8,16 @@ const Form = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    alert(`submitting Name ${fName} ${lName} with email ${email} and an additional comment of "${note}"`)
+    alert(`
+    Name: ${fName} ${lName}
+    email: ${email} 
+    comment: "${note}"`)
+    //values need to be routed to the appropriate results
+    
+    setFname("")
+    setLname("")
+    setEmail("")
+    setNote("")
   }
 
   return(
