@@ -1,0 +1,16 @@
+.footer-container{
+    background-color: #44aacf;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(10vh, auto);
+    max-width: 100vw;
+    grid-template-areas: 
+            't . . .';
+}
+.twitter{
+    grid-area: t;
+    background-image: url('../images/twitterBlackOutline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,19 +1,17 @@
 import React from 'react'
+import './CSS/footer.css'
 
 
-const footerStyle = {
-    backgroundColor: 'blue',
-    height: '20vh',
-    width: '100vw',
-    border: '4px solid black',
-    borderRadius: '8px'
-};
+
+// const fStyle = state ? footerStyle : anotherFooterStyle
 
 const Footer = () => {
     return(
         <>
-        <div style={footerStyle}>
-            FOOTER
+        <div className='footer-container'>
+            <div className='twitter'>twitter</div>
+            <div className='instagram'>insta</div>
+            <div className='contact-icon'>contact</div>
         </div>
         </>
     )
