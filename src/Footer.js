@@ -9,9 +9,9 @@ const Footer = () => {
     return(
         <>
         <div className='footer-container'>
-            <div className='twitter'>twitter</div>
-            <div className='instagram'>insta</div>
-            <div className='contact-icon'>contact</div>
+            <div className='instagram'></div>
+            <div className='twitter'></div>
+            <div className='facebook'></div>
         </div>
         </>
     )

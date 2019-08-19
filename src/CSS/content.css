@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 h2{
-    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
 }
 /* grid-column: 1 / span 3 instead of counting the lines. */
 .title{
@@ -11,6 +11,7 @@ h2{
     background-image: url('../images/title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    font-family: 'Noto Sans', sans-serif;
 }
 .container {
     background-color: white;
@@ -22,18 +23,25 @@ h2{
     grid-template-areas: 
             's s s s' 
             's s s s' 
-            's s s s' 
+            's s s s'
+            'tt tt tt tt' 
             'i1 i1 i2 i2'
             'info info info info'
+            'img img img img'
+            'info2 info2 info2 info2'
             'a a a a' 
             'a a a a'
-            'info2 info2 info2 info2' 
+            'info3 info3 info3 info3' 
             'c c c c'
             ;
 }
 
 .slide-show{
-    background-image: url(https://cdn.shopify.com/s/files/1/1464/6238/articles/plastic_in_oceans_1400x.progressive.jpg?v=1533035672);
+    background-image:  
+    linear-gradient(
+        rgba(77, 89, 90, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://cdn.shopify.com/s/files/1/1464/6238/articles/plastic_in_oceans_1400x.progressive.jpg?v=1533035672);
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: s;
@@ -41,6 +49,18 @@ h2{
     /* border: 4px solid linear-gradient(to right, #087d93 10%, #e04602 91%); */
     /* border-top-color: skyblue; */
     border-radius: 10px;
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    
+}
+.top-text{
+    grid-area: tt;
+    font-size: 16pt;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+
 }
 .item-1{
     background-color: #004481;
@@ -56,36 +76,29 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.title1{
-    background-color: rgb(51, 187, 234,0.7);
-    border: 0px solid #087d93;
-    border-radius: 5px;
-    color: black;
+.title1 {
+    color: white;
     text-align: center;
     font-size: 20pt;
+    font-weight: 700;
     font-family: 'Noto Sans', sans-serif;
-    padding-left: 5px;
-    padding-right: 5px;
+    text-shadow: 2px 2px #000000;
+    
 }
 .title2{
-    background-color: rgb(51, 187, 234,0.8);
-    border: 0px solid #087d93;
-    border-radius: 5px;
-    color:black;
+    color: white;
     text-align: center;
     font-size: 20pt;
+    font-weight: 700;
     font-family: 'Noto Sans', sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
+    text-shadow: 2px 2px #000000;
 }
 .item-2{
     background-image: url('http://www.seafolklore.org/wp/wp-content/uploads/2017/08/DinaBladeDTD2015.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: i2;
-    /* border: 4px solid #087d93; */
     border-radius: 8px;
-    color:#e04602;
     text-align: center;
     font-size: 20pt;
     display: flex;
@@ -94,19 +107,63 @@ h2{
 }
 .info{
     grid-area: info;
-    font-size: 14pt;
+    font-size: 16pt;
     font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
 }
-.articles{
-    
-    grid-area: a;
-    border: 4px solid #087d93;
-    border-radius: 8px;
+p{
+    margin-top: -20px;
 }
 .info2{
-grid-area: info2;
-font-size: 14pt;
-font-family: 'Noto Sans', sans-serif;
+    grid-area: info2;
+    font-size: 16pt;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+}
+.info-image{
+    grid-area: img;
+    background-image: url('https://www.ecocenter.org/sites/default/files/ECO_Earth_655px.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 353px;
+    object-fit: scale-down;
+}
+.info3{
+    grid-area: info3;
+    font-size: 16pt;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+}
+.articles{
+    grid-area: a;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto auto 100px 100px auto auto;
+    grid-auto-rows: minmax(20vh, auto);
+    max-width: 100vw;
+
+}
+.article-left{
+    background-color: whitesmoke;
+    grid-column: 1;
+    border-left-style: none;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 2px;
+}
+.article-main{
+    background-color: whitesmoke;
+    grid-column: 3 / span 2;
+    grid-row: 1/2;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 2px;
+}
+.article-right{
+    background-color: whitesmoke;
+    grid-column: 6;
+    border-right-style: none;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 2px;
 }
 .contact{
     background-color: whitesmoke;
